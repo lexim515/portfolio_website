@@ -1,0 +1,515 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #edd0a5;
+}
+
+.img {
+  display: block;
+  width: 40vw;
+  height: auto;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  margin: 20px auto;
+  padding: 3rem;
+}
+
+.img-icon {
+  width: 5vw;
+  padding: 2rem;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #photo-section-1:hover > img,
+#photo-section-2:hover > img,
+#photo-section-3:hover > img {
+  -webkit-filter: grayscale(1);
+  filter: gray;
+  opacity: 0.25;
+} */
+
+/* #photo-section-1:hover .overlay,
+#photo-section-2:hover .overlay,
+#photo-section-3:hover .overlay {
+  opacity: 1;
+} */
+
+/* .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  height: 75%;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+} */
+
+.overlay {
+  width: 100%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+#photo-section-1,
+#photo-section-2,
+#photo-section-3 {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+/* #section-1,
+#experiences {
+  background-image: url(./icons/Group\ 1.png);
+} */
+
+.head {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 5rem;
+}
+.name {
+  font-size: 2rem;
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+#about-me {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#about-paragraphs {
+  width: 50vw;
+  padding: 5rem;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: bolder;
+  overflow: auto;
+}
+
+#about-paragraphs > h1,
+#about-paragraphs > p {
+  width: 100%;
+}
+
+#about-paragraphs > h1:hover {
+  color: #f58549;
+}
+
+a {
+  text-decoration: none;
+  color: #772f1a;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f58549;
+}
+#about-photo {
+  width: 50vw;
+}
+#photo {
+  max-height: 100%;
+  max-width: 50vw;
+  overflow: hidden;
+}
+#section-2 {
+  margin-bottom: 5rem;
+}
+
+#experiences {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#jcu,
+#fullstack,
+#resume {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: flex-start;
+}
+
+.title,
+.paragraph,
+.years,
+.link-to-pages {
+  width: 25vw;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.icons-1 {
+  width: 3vw;
+  padding-bottom: 2rem;
+}
+
+.icons-2 {
+  width: 2.5vw;
+  padding-bottom: 2rem;
+}
+
+#photo {
+  width: auto;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.25rem;
+}
+.paragraph {
+  line-height: 2rem;
+}
+
+.paragraph,
+.years,
+.link-to-pages {
+  font-size: 1.25rem;
+}
+.scroll-container {
+  height: 100vh;
+}
+
+.overlay {
+  line-height: 1.75rem;
+}
+
+/* .scroll-element {
+  width: 100%;
+} */
+
+.project-links {
+  margin: 1rem;
+}
+
+#cta {
+  text-align: center;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 3s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 2s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 2s ease-in-out both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  #section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .project-links {
+    margin: 0.75rem;
+  }
+
+  #section-2 {
+    height: 80vh;
+  }
+
+  #experiences {
+    height: 50vh;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .overlay {
+    line-height: 1.25rem;
+  }
+
+  #jcu,
+  #fullstack,
+  #resume {
+    padding-bottom: none;
+    height: 50vh;
+  }
+
+  #about-me {
+    height: 80vh;
+  }
+
+  #about-photo {
+    width: auto;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .head {
+    font-size: 4rem;
+  }
+
+  #about-photo {
+    width: 50vw;
+  }
+
+  #about-paragraphs {
+    width: 50vw;
+    padding: 2rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    overflow: auto;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .paragraph,
+  .years,
+  .link-to-pages {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .overlay {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .project-links {
+    margin: 0.5rem;
+  }
+
+  .overlay {
+    line-height: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .paragraph,
+  .years,
+  .link-to-pages {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+    line-height: 1rem;
+  }
+
+  #experiences {
+    height: 50vh;
+    margin-top: 1rem;
+  }
+
+  .head {
+    font-size: 3rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  #section-1 {
+    height: 80vh;
+  }
+
+  #jcu,
+  #fullstack,
+  #resume {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .img {
+    padding: 1rem;
+  }
+
+  .overlay {
+    font-size: 0.4rem;
+    line-height: normal;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .paragraph,
+  .years,
+  .link-to-pages {
+    font-size: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: normal;
+  }
+
+  #jcu,
+  #fullstack,
+  #resume {
+    height: 40vh;
+  }
+
+  #experiences {
+    height: 40vh;
+    margin-bottom: 1rem;
+  }
+
+  #about-paragraphs {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  #about-me {
+    height: 50vh;
+  }
+
+  .head {
+    font-size: 2.5rem;
+  }
+
+  .name {
+    font-size: 0.75rem;
+  }
+
+  #section-1 {
+    height: 60vh;
+  }
+
+  #section-2 {
+    height: 50vh;
+  }
+
+  #projects {
+    height: 70%;
+    margin-bottom: 3rem;
+  }
+
+  #cta {
+    font-size: 0.75rem;
+  }
+
+  .overlay {
+    width: 60vw;
+  }
+  .project-links {
+    margin: 0.25rem;
+  }
+  .img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 320px) {
+  #section-1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .head,
+  .name {
+    text-align: center;
+  }
+
+  #experiences {
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+}
